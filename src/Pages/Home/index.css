@@ -1,0 +1,228 @@
+/* Background covering Navbar and First Section */
+.wavy--background {
+  background-image: url("../../assets/images/Vector.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 12rem;
+}
+
+/* Navbar */
+.home--navbar {
+  padding: 2rem 6rem;
+}
+
+.navbar--title {
+  display: flex;
+}
+
+.navbar--navigations {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.navigation {
+  margin-right: 3rem;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.section {
+  max-width: 1320px;
+  margin-top: 4rem;
+  margin-inline: auto;
+}
+
+.architecture--image {
+  width: 520px;
+  height: 480px;
+  border-radius: 20px;
+}
+
+.architecture--description {
+  margin-top: 2rem;
+  line-height: 2rem;
+}
+
+.second.section,
+.image--converter
+{
+  margin-bottom: 16rem;
+}
+
+.converter--title {
+  text-align: center;
+}
+
+.drag-drop-zone {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  max-width: 65%;
+  padding: 16rem 8rem;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 15px;
+}
+
+.drag-drop-zone.drag-active {
+  transition: all 0.5s ease-in-out;
+  box-shadow: none;
+  border: 1px dashed var(--gray);
+}
+
+.drag-drop-zone > *:not(:first-child) {
+  margin-top: 1rem;
+}
+
+.drag-drop-zone > hr {
+  border: none;
+  border-top: 1px solid var(--gray);
+  color: #333;
+  height: 10px;
+  width: 100%;
+  overflow: visible;
+  text-align: center;
+}
+
+.drag-drop-zone > hr:after {
+  background: var(--white);
+  content: "Or";
+  padding: 0 .25rem;
+  position: relative;
+  top: -13px;
+}
+
+.upload--button {
+  text-align: center;
+  padding-block: .25rem;
+  width: 25%;
+  background-color: transparent;
+  color: var(--gray);
+  border-radius: 15px;
+  border: 2px solid var(--gray);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.uploaded > * {
+  margin: 0;
+}
+
+.uploaded {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.uploaded > *:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.cancel--upload {
+  background-color: var(--orange);
+  padding: .1rem .5rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.button--area {
+  position: relative;
+  max-width: 768px;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.convert--button {
+  padding-block: .75rem;
+  width: 35%;
+  border: none;
+  outline: none;
+  background-color: var(--gray);
+  color: var(--white);
+  font-weight: 600;
+  border-radius: 15px;
+}
+
+.loading--spinner {
+  position: absolute;
+  top: 25%;
+  right: 27.5%;
+  overflow: visible;
+  animation: spin 2s infinite linear;
+}
+
+.footer {
+  background-color: var(--gray);
+  padding-block: 4rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .wavy--background {
+    background-image: none;
+    background-color: var(--orange);
+    padding-bottom: 4rem;
+  }
+
+  /* Navbar */
+  .home--navbar {
+    padding: 1.5rem 3rem;
+  }
+
+  .navbar--content > *:not(:first-child) {
+    margin-left: 1rem;
+  }
+
+  /* Section */
+  .section {
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .architecture--text {
+    margin-top: 1rem;
+  }
+
+  .architecture--image {
+    width: 300px;
+    height: 240px;
+  }
+
+  .architecture--description {
+    margin-top: 1rem;
+  }
+
+  .second.section,
+  .image--converter.section
+  {
+    margin-bottom: 4rem;
+  }
+
+  .drag-drop-zone {
+    margin-block: 2rem;
+    max-width: auto;
+    padding: 12rem 6rem;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+  }
+
+  .convert--button {
+    padding-block: .75rem;
+    width: 50%;
+    border: none;
+    outline: none;
+    background-color: var(--gray);
+    color: var(--white);
+    font-size: var(--mobile-standard-font-size);
+    font-weight: 600;
+    border-radius: 15px;
+  }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg) }
+}

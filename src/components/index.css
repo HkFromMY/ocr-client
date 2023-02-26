@@ -1,0 +1,23 @@
+.heading-3 {
+  /* Heading component */
+  margin-bottom: 0px;
+  font-size: var(--primary-font-size);
+  line-height: 54px;
+}
+
+.primary.heading-3 {
+  font-weight: 700;
+  color: var(--white);
+}
+
+.secondary.heading-3 {
+  font-weight: 600;
+  color: var(--gray);
+}
+
+@media only screen and (max-width: 768px) {
+  .heading-3 {
+    font-size: var(--mobile-primary-font-size);
+    line-height: 36px;
+  }
+}
